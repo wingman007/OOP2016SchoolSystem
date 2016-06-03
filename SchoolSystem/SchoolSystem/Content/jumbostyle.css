@@ -1,0 +1,16 @@
+﻿.jumbotron {
+    background-image: url("../Content/Images/teacher.jpg");
+    background-size: cover;
+    background-position: 0% 5%;
+    height: 500px;
+    color: white;
+    text-align: right;
+    text-shadow: lightblue 0.15em 0.15em 0.3em;
+    
+}
+
+.jumbotron h1{
+    padding-top:9%;
+    padding-right:20%;
+
+}
