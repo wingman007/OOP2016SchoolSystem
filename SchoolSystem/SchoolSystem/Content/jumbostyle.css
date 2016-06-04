@@ -1,4 +1,8 @@
-﻿.jumbotron {
+﻿body{
+    background-image: url("../Content/Images/bk.jpg");
+}
+
+.jumbotron {
     background-image: url("../Content/Images/teacher.jpg");
     background-size: cover;
     background-position: 0% 5%;
@@ -14,3 +18,67 @@
     padding-right:20%;
 
 }
+.btn {
+    background: rgb(194, 228, 253);
+    color: gray;
+    border-color: white;
+
+}
+
+.btn:hover {
+    background: rgb(0, 228, 253);
+    color: white;
+}
+
+hr {
+    border-color: rgb(0, 228, 253);
+}
+
+input {
+    background: rgb(194, 228, 253);
+    color: gray;
+}
+
+table{
+    border-color:red;
+}
+
+p a{
+    color: gray;
+}
+
+div a{
+    color: gray;
+}
+
+p a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+div a:hover{
+    color: white;
+    text-decoration: none;
+}   
+
+tr td a{
+    color: gray;
+}
+
+tr td a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+table th {
+    background: rgb(194, 228, 253);
+    color:gray;
+}
+
+tbody tr td:nth-child(last) {
+    color:gray;
+}
+
+
+
+

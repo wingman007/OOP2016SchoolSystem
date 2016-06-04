@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -15,5 +16,13 @@ namespace SchoolSystem.Models
 
         public virtual Grades Grades { get; set; }
 
+    }
+
+    public class StudentDBContext : DbContext
+    {
+        public DbSet<Students> Students { get; set; }
+        public DbSet<Grades> Grades { get; set; }
+        public DbSet<Teachers> Teachers { get; set; }
+        public DbSet<Subjects> Subjects { get; set; }
     }
 }

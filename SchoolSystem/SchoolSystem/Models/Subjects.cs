@@ -9,5 +9,8 @@ namespace SchoolSystem.Models
     {
         public int Id { get; set; }
         public string Subject { get; set; }
+
+        public virtual ICollection<Teachers> Teachers { get; set; }
+
     }
 }

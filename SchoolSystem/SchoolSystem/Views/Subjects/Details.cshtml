@@ -1,0 +1,30 @@
+﻿@model SchoolSystem.Models.Subjects
+
+@{
+    ViewBag.Title = "Details";
+}
+
+@Styles.Render("~/Content/jumbostyle.css")
+
+@Styles.Render("~/Content/hr.css")
+
+<h2>Details</h2>
+
+<div>
+    <h4>Subjects</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
