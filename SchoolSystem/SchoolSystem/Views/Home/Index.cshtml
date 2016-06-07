@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@Styles.Render("~/Content/jumbostyle.css")
+
+<div class="jumbotron">
+    <h1>SchoolSystem</h1>
+    <p class="lead">The free online school database.</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welsome to SchoolSystem</h2>
+        <p>
+           SchoolSystem is a free to use software which stores all needed information of a school.
+
+        </p>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>Students</h2>
+        <p>The student database can be editted only by administrators. As a student or a parent you get check the information you want to know here:</p>
+        <p><a class="btn btn-default" @Html.ActionLink("To students", "index", "Students")</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Teachers</h2>
+        <p>All teachers are saved in the database. You can check the information about them here:</p>
+        <p><a class="btn btn-default" @Html.ActionLink("To teachers", "index", "Teachers")</a></p>
+    </div>
+</div>
